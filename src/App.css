@@ -1,0 +1,37 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap'); */
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--theme-page-background);
+  color: var(--theme-page-text);
+}
+
+.corner {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button {
+  padding: 0.75em;
+  margin: 1.5em;
+  border-radius: 10%;
+  background-color: var(--theme-button-color);
+  color: var(--theme-button-text);
+  font-size: 1rem;
+  border: 0 solid transparent;
+}
+
+button:hover {
+  filter: invert(100%);
+}
+
+button:focus {
+  outline: none;
+}

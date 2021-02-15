@@ -1,0 +1,17 @@
+:root {
+    --theme-button-text: #FFF;
+}
+
+.light {
+    --theme-page-background: #FFF;
+    --theme-page-text: #111;
+    --theme-button-color: rgb(40, 0, 238);
+
+}
+
+.dark {
+    --theme-page-background: #111;
+    --theme-page-text: #FFF;
+    --theme-button-color: rgb(250, 87, 0);
+    /* --theme-button-text: #111; */
+}
