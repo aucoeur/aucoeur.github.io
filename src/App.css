@@ -10,6 +10,8 @@
 
   background: var(--theme-page-background);
   color: var(--theme-page-text);
+
+  /* mask: url('./assets/bg_pattern.svg') repeat; */
 }
 
 .corner {

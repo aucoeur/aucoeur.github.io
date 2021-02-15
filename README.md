@@ -7,6 +7,7 @@ a work in progress :)
 - [x] Basic
   - [x] Make Mobile friendly
   - [ ] Clean up CSS
+  - [ ] Make animation Safari friendly `:before`
 - [ ] Header
   - [ ] subtle SVG pattern background
 - [ ] SideNav

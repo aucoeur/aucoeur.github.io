@@ -1,5 +1,6 @@
 .Header {
     padding: 2em 4em;
+    color: var(--theme-page-text);
 }
 
 .badges {
