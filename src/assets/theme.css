@@ -1,17 +1,22 @@
 :root {
     --theme-button-text: #FFF;
+    --light: rgb(80, 80, 80);
+    --dark: #000;
 }
 
 .light {
     --theme-page-background: #FFF;
     --theme-page-text: #111;
     --theme-button-color: rgb(40, 0, 238);
-
+    --theme-same: var(--light);
+    --theme-diff: var(--dark);
 }
 
 .dark {
-    --theme-page-background: #111;
+    --theme-page-background: rgb(24, 24, 24);
     --theme-page-text: #FFF;
     --theme-button-color: rgb(250, 87, 0);
+    --theme-same: var(--dark);
+    --theme-diff: var(--light);
     /* --theme-button-text: #111; */
 }
