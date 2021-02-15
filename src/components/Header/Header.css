@@ -3,7 +3,17 @@
 }
 
 .badges {
-    margin: 1em 0;
+    display: flexbox;
+    text-align: center;
+    transform: scale(2);
+    transform-origin: center;
+}
+.col {
+    margin: .5em;
+    justify-content: space-evenly;
+}
+a {
+    margin: 0.2em;
 }
 
 /* TODO: 3dp animation.. move to own component, fix colors for dark mode */

@@ -4,6 +4,14 @@
     --dark: #000;
 }
 
+h1 {
+    font-size: 8vh;
+}
+
+h3 {
+    font-size: 4vh;
+}
+
 .light {
     --theme-page-background: #FFF;
     --theme-page-text: #111;

@@ -4,7 +4,9 @@ a work in progress :)
 ## TODO
 - [x] Dark Mode Toggle
   - [ ] Make toggle pretty
-- [x] Basic 
+- [x] Basic
+  - [x] Make Mobile friendly
+  - [ ] Clean up CSS
 - [ ] Header
   - [ ] subtle SVG pattern background
 - [ ] SideNav

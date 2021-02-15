@@ -18,7 +18,7 @@ function App() {
   return (
       <div className={`App ${theme ? 'dark': 'light'}`}>
           <div className='corner'>
-            <button onClick={() => setTheme(!theme)}> Toggle </button>
+            <button onClick={() => setTheme(!theme)}> Toggle Theme </button>
           </div>
           <Header />
       </div>
