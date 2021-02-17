@@ -1,7 +1,7 @@
 {
   "name": "aucoeur.github.io",
-  "homepage": "https://okayauco.net",
-  "version": "0.1.0",
+  "homepage": "https://aucoeur.dev",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
