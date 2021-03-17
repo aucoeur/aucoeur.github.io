@@ -1,7 +1,11 @@
 :root {
     --theme-button-text: #FFF;
-    --light: rgb(80, 80, 80);
+    --light:  rgb(238, 230, 223);
+    --semidark: rgb(80, 80, 80);
     --dark: #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -13,18 +17,20 @@ h3 {
 }
 
 .light {
-    --theme-page-background: #FFF;
+    --theme-page-background: var(--light);
     --theme-page-text: #111;
-    --theme-button-color: rgb(40, 0, 238);
+    --theme-button-color: rgb(39, 60, 130);
     --theme-same: var(--light);
     --theme-diff: var(--dark);
+    --theme-mid: var(--dark);
 }
 
 .dark {
     --theme-page-background: rgb(24, 24, 24);
-    --theme-page-text: #FFF;
-    --theme-button-color: rgb(250, 87, 0);
+    --theme-page-text: var(--light);
+    --theme-button-color: rgb(248, 78, 16);
     --theme-same: var(--dark);
     --theme-diff: var(--light);
+    --theme-mid: var(--semidark);
     /* --theme-button-text: #111; */
 }
