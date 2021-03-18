@@ -5,17 +5,17 @@ a work in progress :)
 - [x] Dark Mode Toggle
   - [ ] Make toggle pretty
 - [x] Basic
-  - [x] Make Mobile friendly
+  - [x] Make Mobile friendly/responsive
   - [ ] Clean up CSS
-  - [ ] Make animation Safari friendly `:before`
-- [ ] Header
-  - [ ] subtle SVG pattern background
+  - [ ] Make animation iOS/Safari friendly [`:before`, etc]
+- [x] Basic Header
+  - [ ] subtle SVG pattern background (?)
 - [ ] SideNav
 - [ ] About
 - [ ] Portfolio Projects
 - [ ] Resume / Experience
-- [ ] Resume - PDF
-- [ ] Contact
+- [x] Resume - PDF
+- [x] Contact (badges)
 
 ## Built With
 - ReactJS
