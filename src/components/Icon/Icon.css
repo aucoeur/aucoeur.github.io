@@ -1,10 +1,17 @@
 
-/* TODO: broken on safari.. add vendor specific prefixes and see: https://css-tricks.com/snippets/css/keyframe-animation-syntax/ ?? */
+/* TODO: broken on safari.. add vendor specific prefixes and see:
+- https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+- https://developer.apple.com/library/archive/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/AnimatingWithKeyframes/AnimatingWithKeyframes.html#//apple_ref/doc/uid/TP40008032-CH14-SW5 ?? */
 
 .animation {
     margin: 2em;
 }
 
+svg {
+    stroke: var(--accent-bright);
+    stroke-width: 4;
+    fill: transparent;
+}
 .threedp {
     height: 350px;
     width: 400px;
@@ -34,7 +41,7 @@
     border-left: 5px solid var(--theme-diff);
     border-right: 5px solid var(--theme-diff);
     border-bottom: 5px solid  var(--theme-page-background);
-    background-color: orangered;
+    background-color: var(--accent-bright);
     transform: translate(120px, 5px);
     z-index: initial;
 }
@@ -64,7 +71,7 @@
     offset-rotate: 0deg;
     z-index: -10;
 }
-
+/*
 @-webkit-keyframes raise {
     from {
         transform: translate(0, 25px);
@@ -81,7 +88,7 @@
     to {
         transform: translate(0, 90px);
     }
-}
+} */
 
 .bed {
     width: 150px;
@@ -103,9 +110,15 @@
     position: absolute;
     /* transform: translate(78px, -10px); */
     -moz-animation: move linear 8000ms;
-    -webkit-animation: move linear 8000ms;
-            animation: move linear 8000ms;
-    animation-direction: reverse;
+         animation: move linear 8000ms;
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 8000ms;
+            animation-duration: 8000ms;
+    -webkit-animation-direction: reverse;
+            animation-direction: reverse;
     offset-path: path("M 102 -158 V -140.4 H 116.4 Q 121.2 -143.6 116.4 -138.8 H 82.8 Q 78 -134 82.8 -129.2 H 154.8 Q 159.6 -124.4 154.8 -119.6 H 44.4 Q 39.6 -114.8 44.4 -110 H 154.8 Q 159.6 -105.2 154.8 -100.4 H 44.4 Q 39.6 -95.6 44.4 -90.8 H 154.8 Q 159.6 -86 154.8 -81.2 H 42");
     offset-anchor: center;
     offset-rotate: 0deg;
@@ -113,6 +126,9 @@
 
 
 @-webkit-keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
   100% {
     offset-distance: 100%;
   }

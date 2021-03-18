@@ -2,7 +2,8 @@
     --theme-button-text: #FFF;
     --light:  rgb(238, 230, 223);
     --semidark: rgb(80, 80, 80);
-    --dark: #000;
+    --dark: rgb(17, 17, 17);
+    --accent-bright: rgb(255, 69, 0);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ h3 {
 
 .light {
     --theme-page-background: var(--light);
-    --theme-page-text: #111;
+    --theme-page-text: var(--dark);
     --theme-button-color: rgb(39, 60, 130);
     --theme-same: var(--light);
     --theme-diff: var(--dark);
@@ -28,9 +29,8 @@ h3 {
 .dark {
     --theme-page-background: rgb(24, 24, 24);
     --theme-page-text: var(--light);
-    --theme-button-color: rgb(248, 78, 16);
+    --theme-button-color: var(--accent-bright);
     --theme-same: var(--dark);
     --theme-diff: var(--light);
     --theme-mid: var(--semidark);
-    /* --theme-button-text: #111; */
 }
