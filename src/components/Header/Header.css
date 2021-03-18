@@ -4,23 +4,22 @@
 }
 
 .badges {
-    display: grid;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    transform: scale(2.5);
+    transform: scale(2.75);
     transform-origin: center;
 }
-.col {
-    flex-direction: column;
-    margin: .5em;
+
+.row {
+    flex-direction: row;
+    margin: .25em;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 a {
     margin: 0.2em;
-}
-
-.res-icon {
-    background-color: rgb(99, 17, 17);
-    border: none
 }

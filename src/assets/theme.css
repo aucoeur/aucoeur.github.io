@@ -9,11 +9,11 @@
 }
 
 h1 {
-    font-size: 8vh;
+    font-size: 6vh;
 }
 
 h3 {
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 .light {
@@ -22,7 +22,7 @@ h3 {
     --theme-button-color: rgb(39, 60, 130);
     --theme-same: var(--light);
     --theme-diff: var(--dark);
-    --theme-mid: var(--dark);
+    --theme-mid: var(--semidark);
 }
 
 .dark {

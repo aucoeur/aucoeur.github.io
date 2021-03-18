@@ -1,11 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap'); */
-
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box;
 
   background: var(--theme-page-background);
@@ -44,34 +42,38 @@ button:focus {
 @media only screen and (max-width: 600px) {
   .App {
     height: 100vh;
-    /* transform: scale(1); */
+    /* transform: scale(0.8); */
     overflow: hidden;
   }
 
   .Header {
-    margin: 2%;
-    padding: 0.75em !important;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0.70);
-    transform-origin: center;
-    height: 90vh;
+    margin-top: 4.5em !important;
+    padding: 1.5em !important;
+    transform: scale(0.60);
+    transform-origin: top;
+    /* height: 100vh; */
+  }
+  h1 {
+    font-size: calc(2em + 6vw) !important;
+  }
+
+  h3 {
+    font-size: calc(1em + 3vw)!important;
   }
 
   .badges {
-    display: grid;
-    transform: scale(1);
+    transform: scale(2.25) !important;
     padding-top: 2em;
-    padding:0;
   }
 
-  .row, .col {
+  .row {
+    flex-direction: row;
     margin: 0;
     padding: 0;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600 and up) */
 @media only screen and (min-width: 600px) {
   .App {
     /* transform: scale(1); */
@@ -88,13 +90,13 @@ button:focus {
   }
 
   .badges {
-    display: grid;
+    /* display: grid; */
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    transform: scale(1);
+    transform: scale(0.6);
     padding-top: 2em;
   }
-  .row, .col {
+  .row {
     margin: 0;
     padding:0;
 
