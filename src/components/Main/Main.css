@@ -3,5 +3,59 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
-  padding-left: 1.2em;
+  padding: 2em;
+}
+
+.badges {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: scale(2);
+    transform-origin: center;
+}
+
+.row {
+    flex-direction: row;
+    margin: .25em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    margin: 0.2em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .App {
+    overflow: hidden;
+  }
+  .main {
+    flex: 1;
+    justify-content:flex-start;
+    align-items:center;
+    transform: scale(1);
+  }
+
+  .badges {
+    transform: scale(1.75);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600 and up) */
+@media only screen and (min-width: 600px) {
+  .App {
+    overflow: hidden;
+  }
+  .main {
+    flex: 1;
+    justify-content: flex-start;
+    align-items:center;
+    transform: scale(1);
+  }
+  .badges {
+    transform: scale(1.75);
+  }
 }

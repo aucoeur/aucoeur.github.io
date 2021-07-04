@@ -1,8 +1,8 @@
 :root {
   --theme-button-text: rgb(255, 255, 255);
-  --light:  rgb(238, 230, 223);
+  --light:  rgb(219, 215, 212);
   --semidark: rgb(80, 80, 80);
-  --dark: rgb(50, 50, 50);
+  --dark: rgb(36, 36, 36);
   --accent-bright: rgb(255, 69, 0);
   --accent-complement: rgb(8, 30, 103);
   font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
@@ -27,13 +27,13 @@ body {
 }
 
 h1 {
-  font-size: 10vh;
-  font-family: 'Proxima Nova Bold', 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 5vh;
+  font-family: 'Proxima Nova Semibold', 'Trebuchet MS', Helvetica, sans-serif;
 }
 
 h3 {
-  font-size: 6vh;
-  font-family: 'Proxima Nova Semibold', 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 3vh;
+  font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
 }
 
 .light {

@@ -30,6 +30,7 @@ function App() {
 
 
       <SideBar
+        theme={theme}
         toggle={toggle}
         collapse={collapse}/>
 

@@ -1,15 +1,19 @@
 .App {
   height: 100%;
   display: flex;
-  position: relative;
 
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   box-sizing: border-box;
 
   background: var(--theme-page-background);
   color: var(--theme-page-text);
 
+}
+
+.container {
+  flex: 1;
+  padding-left: 2em;
 }
 
 .toggle-theme {
@@ -39,11 +43,13 @@
 @media only screen and (max-width: 600px) {
 
   h1 {
-    font-size: calc(2em + 6vw) !important;
+    font-size: calc(2em + 2vw) !important;
+    font-family: 'Proxima Nova';
   }
 
   h3 {
-    font-size: calc(1em + 3vw)!important;
+    font-size: calc(1em + 1vw)!important;
+    font-family: 'Proxima Nova';
   }
 
 }
