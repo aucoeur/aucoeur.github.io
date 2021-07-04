@@ -2,6 +2,8 @@ import './Work.css';
 
 export default function Work() {
   return (
-    <div>Work</div>
+     <div className="container">
+      <h1>Werk</h1>
+    </div>
   )
 }

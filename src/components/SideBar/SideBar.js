@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import {
   ProSidebar,
+  Menu,
   MenuItem,
   SidebarHeader,
   SidebarFooter,
@@ -9,7 +10,7 @@ import {
 
 import './SideBar.scss'
 
-export default function SideBar({theme, collapse, toggle, setToggle, setTheme}) {
+export default function SideBar({ collapse, toggle, setToggle}) {
   return (
     <ProSidebar
       collapsed={collapse}
@@ -17,27 +18,40 @@ export default function SideBar({theme, collapse, toggle, setToggle, setTheme}) 
       breakPoint="md"
       onToggle={setToggle}
     >
-      <SidebarHeader>
-        <h3>Aucoeur Ngo</h3>
+
+      <SidebarHeader className="sidebar-header">
+        <h4>Aucoeur Ngo</h4>
       </SidebarHeader>
       <SidebarContent>
-        <MenuItem>
-          <Link to="/">Main</Link>
-        </MenuItem>
-       <MenuItem>
-          <Link to="/about">About</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="/projects">Projects</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="/work">Work</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="/contact">Contact</Link>
-        </MenuItem>
+        <Menu>
+          <MenuItem>
+            <Link to="/">Main</Link>
+          </MenuItem>
+        </Menu>
+
+        <Menu>
+          <MenuItem>
+            <Link to="/about">About</Link>
+          </MenuItem>
+        </Menu>
+
+        <Menu>
+          <MenuItem>
+            <Link to="/projects">Projects</Link>
+          </MenuItem>
+        </Menu>
+        <Menu>
+          <MenuItem>
+            <Link to="/work">Work</Link>
+          </MenuItem>
+        </Menu>
+        <Menu>
+          <MenuItem>
+            <Link to="/contact">Contact</Link>
+          </MenuItem>
+        </Menu>
       </SidebarContent>
-      <SidebarFooter>
+      <SidebarFooter className="sidebar-header">
         © 2021 Aucoeur Ngo
       </SidebarFooter>
     </ProSidebar>
