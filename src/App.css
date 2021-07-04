@@ -21,7 +21,6 @@
   margin: 2em;
   background: var(--cucumber-water);
   color: var(--theme-button-text);
-
 }
 
 .toggle-theme {
@@ -37,6 +36,7 @@
   color: var(--theme-button-text);
   font-size: .75em;
   border: 0 solid transparent;
+  z-index: 1000;
 }
 
 .toggle-theme:hover {
