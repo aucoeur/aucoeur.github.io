@@ -55,6 +55,7 @@ h3 {
   --theme-diff: var(--dark);
   --theme-mid: var(--semidark);
   background: var(--bg-light);
+  background-size: cover;
 }
 
 .dark {
@@ -65,4 +66,5 @@ h3 {
   --theme-diff: var(--light);
   --theme-mid: var(--semidark);
   background: var(--bg-dark);
+  background-size: cover;
 }
