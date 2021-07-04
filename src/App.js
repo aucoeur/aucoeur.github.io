@@ -26,15 +26,15 @@ function App() {
   return (
     <div className={`App ${theme ? 'dark': 'light'} ${toggle ? 'toggled' : ''}`}>
 
+      <button className='toggle-theme' onClick={() => setTheme(!theme)}>Toggle Theme</button>
+
+
       <SideBar
         toggle={toggle}
         collapse={collapse}/>
-      <Main
-        theme={theme}
-        setTheme={setTheme}
-      />
 
         <Switch>
+          <Route exact path="/" component={Main} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/work" component={Work} />

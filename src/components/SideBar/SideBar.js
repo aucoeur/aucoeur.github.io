@@ -21,6 +21,9 @@ export default function SideBar({theme, collapse, toggle, setToggle, setTheme}) 
         <h3>Aucoeur Ngo</h3>
       </SidebarHeader>
       <SidebarContent>
+        <MenuItem>
+          <Link to="/">Main</Link>
+        </MenuItem>
        <MenuItem>
           <Link to="/about">About</Link>
         </MenuItem>

@@ -12,6 +12,28 @@
 
 }
 
+.toggle-theme {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 0.75em;
+  margin: 1.5em;
+  border-radius: .5rem;
+  text-align: center;
+  background-color: var(--theme-button-color);
+  color: var(--theme-button-text);
+  font-size: .75em;
+  border: 0 solid transparent;
+}
+
+.toggle-theme :hover {
+  filter: contrast(125%);
+}
+
+.toggle-theme :focus {
+  outline: none;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
