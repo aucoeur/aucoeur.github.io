@@ -6,14 +6,22 @@
   justify-content: space-between;
   box-sizing: border-box;
 
-  background: var(--theme-page-background);
+
+  background-color: var(--theme-page-background);
   color: var(--theme-page-text);
 
 }
 
 .container {
+  display: flex;
   flex: 1;
-  padding-left: 2em;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 2em  20em 2em;
+  margin: 2em;
+  background: var(--cucumber-water);
+  color: var(--theme-button-text);
+
 }
 
 .toggle-theme {
@@ -31,8 +39,8 @@
   border: 0 solid transparent;
 }
 
-.toggle-theme :hover {
-  filter: contrast(125%);
+.toggle-theme:hover {
+  filter: brightness(150%);
 }
 
 .toggle-theme :focus {

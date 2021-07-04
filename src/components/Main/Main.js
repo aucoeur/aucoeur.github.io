@@ -7,10 +7,13 @@ const pdf_icon =`data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZ
 export default function Main() {
   return (
     <div className="main">
-      <h1>Hi, hello, I'm Aucoeur (okkurr!)</h1>
-      <h3>Aspiring Software Engineer. Perpetual Tinkerer :]</h3>
+      <div className="header">
+        <h1>Hi, hello, I'm Aucoeur (okkurr!)</h1>
+        <h3>Aspiring Software Engineer. Perpetual Tinkerer :]</h3>
 
-      <Icon />
+        <Icon />
+      </div>
+
 
       <div className="badges">
         <div className="row one">

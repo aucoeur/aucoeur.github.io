@@ -36,10 +36,14 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/about" component={Main} />
+          <Route exact path="/projects" component={Main} />
+          <Route exact path="/work" component={Main} />
+          <Route exact path="/contact" component={Main} />
+          {/* <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/work" component={Work} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/contact" component={Contact} /> */}
         </Switch>
     </div>
   );

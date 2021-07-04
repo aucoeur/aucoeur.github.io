@@ -8,14 +8,15 @@ import {
   SidebarContent,
 } from 'react-pro-sidebar';
 
-// import bg1 from '../../assets/egg.png';
-import bg2 from '../../assets/egg2.png';
+
+// import sideBg from '../../assets/eggen.png';
+import sideBg from '../../assets/side-bg-smoke.png';
 import './SideBar.scss'
 
-export default function SideBar({ theme, collapse, toggle, setToggle}) {
+export default function SideBar({ collapse, toggle, setToggle}) {
   return (
     <ProSidebar
-      image={bg2}
+      image={sideBg}
       collapsed={collapse}
       toggled={toggle}
       breakPoint="md"

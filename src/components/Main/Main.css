@@ -34,13 +34,12 @@ a {
   }
   .main {
     flex: 1;
-    justify-content:flex-start;
-    align-items:center;
-    transform: scale(1);
+    width: 80%;
+
   }
 
   .badges {
-    transform: scale(1.75);
+    transform: scale(1.5);
   }
 }
 

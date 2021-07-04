@@ -26,3 +26,5 @@ src/assets/pdf_icon.svg
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/assets/egg.png
+src/assets/eggen.png

@@ -5,6 +5,17 @@
   --dark: rgb(36, 36, 36);
   --accent-bright: rgb(255, 69, 0);
   --accent-complement: rgb(8, 30, 103);
+  --transparent: rgba(0,0,0,0);
+  --cucumber-water: linear-gradient(90deg, rgba(227, 255, 231, 0.1) 0%, rgba(217, 231, 255, 0.2) 100%);
+  --linear-gradient:
+      linear-gradient(127deg, rgba(57, 104, 175, 0.3), rgba(0,255,0,0) 70.71%),
+      linear-gradient(45deg, rgba(247, 76, 232, 0.3), rgba(255, 0, 0, 0) 70.71%),
+      linear-gradient(210deg, rgba(0, 255, 200, 0.3), rgba(0,0,255,0) 70.71%);
+
+  --bg-light: url('./layered-waves-haikei.svg');
+  --bg-dark: url('./layered-waves-haikei-blue-red.svg');
+
+
   font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
 
   -webkit-font-smoothing: antialiased;
@@ -38,11 +49,12 @@ h3 {
 
 .light {
   --theme-page-background: var(--light);
-  --theme-page-text: var(--dark);
+  --theme-page-text: var(--light);
   --theme-button-color: var(--accent-complement);
   --theme-same: var(--light);
   --theme-diff: var(--dark);
   --theme-mid: var(--semidark);
+  background: var(--bg-light);
 }
 
 .dark {
@@ -52,4 +64,5 @@ h3 {
   --theme-same: var(--dark);
   --theme-diff: var(--light);
   --theme-mid: var(--semidark);
+  background: var(--bg-dark);
 }

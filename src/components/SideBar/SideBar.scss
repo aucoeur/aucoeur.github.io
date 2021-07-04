@@ -1,18 +1,15 @@
-$sidebar-bg-color: var(--theme-diff) !default;
-$sidebar-color: var(--theme-same) !default;
+$sidebar-bg-color: var(--linear-gradient) !default;
+$sidebar-color: var(--light) !default;
 $highlight-color: var(--accent-bright) !default;
 $sidebar-width: 200px !default;
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
 
-.sidebar {
-  filter: invert(90%);
-}
 .sidebar-header {
   padding: 1em;
 
   & h4 {
-    font-size: 3vh;
+    font-size: calc(1em + 1vw) !important;
     font-family: 'Proxima Nova Semibold';
   }
 }
