@@ -7,18 +7,18 @@ a work in progress :)
 - [x] Basic
   - [x] Make Mobile friendly/responsive
   - [ ] Clean up CSS
-  - [ ] Make animation iOS/Safari friendly [`:before`, etc]
-- [x] Basic Header
+- [ ] Main / Landing
   - [ ] subtle SVG pattern background (?)
 - [ ] SideNav
 - [ ] About
 - [ ] Portfolio Projects
 - [ ] Resume / Experience
 - [x] Resume - PDF
-- [x] Contact (badges)
+- [ ] Contact
 
 ## Built With
 - ReactJS
+- React Pro Sidebar - [azouaoui-med/react-pro-sidebar](https://github.com/azouaoui-med/react-pro-sidebar)
 - gh-pages
 
 ## Resources

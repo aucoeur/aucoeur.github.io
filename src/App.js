@@ -1,27 +1,46 @@
 import React, { useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
+
+import Main from './components/Main/Main';
+import SideBar from './components/SideBar/SideBar';
+
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Work from './components/Work/Work';
+import Contact from './components/Contact/Contact';
 
 import './App.css'
 
+// Check if OS darkmode set using css media query
+const prefersDark = () => {
+  const dark = window.matchMedia('(prefers-color-scheme: dark)');
+  return dark.matches
+}
+
 function App() {
-
-  // Check if OS darkmode set using css media query
-  const prefersDark = () => {
-    const dark = window.matchMedia('(prefers-color-scheme: dark)');
-    return dark.matches
-  }
-
   // Set initial state to OS preference
   const [theme, setTheme] = useState(prefersDark);
+  const [toggle, setToggle] = useState(false);
+  const [collapse, setCollapse] = useState(false)
 
   return (
-      <div className={`App ${theme ? 'dark': 'light'}`}>
-          <div className='corner'>
-            <button onClick={() => setTheme(!theme)}> Toggle Theme </button>
-          </div>
-          <h1>Hello World</h1>
-          <h3>Itme STINE</h3>
-          <p>Ahuhuhuhuh hi hello</p>
-      </div>
+    <div className={`App ${theme ? 'dark': 'light'} ${toggle ? 'toggled' : ''}`}>
+
+      <SideBar
+        toggle={toggle}
+        collapse={collapse}/>
+      <Main
+        theme={theme}
+        setTheme={setTheme}
+      />
+
+        <Switch>
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/work" component={Work} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+    </div>
   );
 }
 
