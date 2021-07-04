@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import './assets/theme.css';
-import './App.css';
 
-import Header from './components/Header/Header'
+import './App.css'
 
 function App() {
 
@@ -20,7 +18,9 @@ function App() {
           <div className='corner'>
             <button onClick={() => setTheme(!theme)}> Toggle Theme </button>
           </div>
-          <Header />
+          <h1>Hello World</h1>
+          <h3>Itme STINE</h3>
+          <p>Ahuhuhuhuh hi hello</p>
       </div>
   );
 }
