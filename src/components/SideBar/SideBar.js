@@ -8,7 +8,7 @@ import {
   SidebarContent,
 } from 'react-pro-sidebar';
 
-import bg1 from '../../assets/egg.png';
+// import bg1 from '../../assets/egg.png';
 import bg2 from '../../assets/egg2.png';
 import './SideBar.scss'
 
