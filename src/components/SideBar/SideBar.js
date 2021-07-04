@@ -56,7 +56,7 @@ export default function SideBar({ collapse, toggle, setToggle}) {
           </MenuItem>
         </Menu>
       </SidebarContent>
-      <SidebarFooter className="sidebar-header">
+      <SidebarFooter className="sidebar-footer">
         © 2021 Aucoeur Ngo
       </SidebarFooter>
     </ProSidebar>

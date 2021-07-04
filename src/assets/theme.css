@@ -12,8 +12,8 @@
       linear-gradient(45deg, rgba(247, 76, 232, 0.3), rgba(255, 0, 0, 0) 70.71%),
       linear-gradient(210deg, rgba(0, 255, 200, 0.3), rgba(0,0,255,0) 70.71%);
 
-  --bg-light: url('./layered-waves-haikei.svg');
-  --bg-dark: url('./layered-waves-haikei-blue-red.svg');
+  --bg-dark: url('./layered-waves-haikei.svg');
+  --bg-light: url('./layered-waves-haikei-blue-red.svg');
 
 
   font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;

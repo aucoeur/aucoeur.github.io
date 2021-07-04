@@ -25,7 +25,7 @@ svg {
     position: relative;
     width: 200px;
     height: 200px;
-    border: 0.65em solid var(--theme-same);
+    border: 0.65em solid var(--theme-diff);
     border-radius: 10%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -39,8 +39,8 @@ svg {
     width: 30px;
     background-clip: content-box;
     border-top: 5px solid var(--transparent);
-    border-left: 5px solid var(--theme-same);
-    border-right: 5px solid var(--theme-same);
+    border-left: 5px solid var(--theme-diff);
+    border-right: 5px solid var(--theme-diff);
     border-bottom: 5px solid var(--transparent);
     background-color: var(--accent-bright);
     transform: translate(115px, 5px);
@@ -60,8 +60,8 @@ svg {
     height: 15px;
     position: absolute;
     background-color: transparent;
-    border-top: 5px solid var(--theme-same);
-    border-bottom: 5px solid var(--theme-same);
+    border-top: 5px solid var(--theme-diff);
+    border-bottom: 5px solid var(--theme-diff);
     border-left: 0px;
     border-right: 0px;
     /* animation: raise 8s steps(8, end) reverse; */
@@ -94,7 +94,7 @@ svg {
 .bed {
     width: 150px;
     position: absolute;
-    border-top: 10px solid var(--theme-same);
+    border-top: 10px solid var(--theme-diff);
     border-bottom: 5px solid transparent;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;

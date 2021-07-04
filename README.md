@@ -3,18 +3,19 @@ a work in progress :)
 
 ## TODO
 - [x] Dark Mode Toggle
-  - [ ] Make toggle pretty
+  - [x] Style toggle
 - [x] Basic
   - [x] Make Mobile friendly/responsive
   - [ ] Clean up CSS
-- [ ] Main / Landing
-  - [ ] subtle SVG pattern background (?)
-- [ ] SideNav
-- [ ] About
-- [ ] Portfolio Projects
-- [ ] Resume / Experience
-- [x] Resume - PDF
-- [ ] Contact
+- [x] Main / Landing
+  - [x] subtle SVG pattern background (?)
+  - [x] Resume - PDF
+- [x] Setup SideNav (disabled for now)
+  - [x] probably calm down and give up the sidebar bg 🥲
+  - [ ] About
+  - [ ] Portfolio Projects
+  - [ ] Resume / Experience
+  - [ ] Contact
 
 ## Built With
 - ReactJS
