@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.corner {
+  display: flex;
+  align-self: flex-end;
+}
+
+button {
+  padding: 0.75em;
+  margin: 1.5em;
+  border-radius: 10%;
+  text-align: center;
+  background-color: var(--theme-button-color);
+  color: var(--theme-button-text);
+  font-size: .8em;
+  border: 0 solid transparent;
+}
+
+button:hover {
+  filter: contrast(125%);
+}
+
+button:focus {
+  outline: none;
+}
