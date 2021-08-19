@@ -24,3 +24,4 @@ a work in progress :)
 
 ## Resources
 - [Light and Dark Mode in a React App With CSS Styles by Nijin Vinodan](https://medium.com/swlh/setting-up-light-and-dark-mode-in-a-react-application-just-with-styles-7790dea22aed)
+- Color Palette Generator: http://colormind.io/
