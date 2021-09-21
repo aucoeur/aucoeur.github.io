@@ -1,65 +1,22 @@
-import { Link } from 'react-router-dom';
-import {
-  ProSidebar,
-  Menu,
-  MenuItem,
-  SidebarHeader,
-  SidebarFooter,
-  SidebarContent,
-} from 'react-pro-sidebar';
-
-
-// import sideBg from '../../assets/eggen.png';
-import sideBg from '../../assets/side-bg-smoke.png';
+import {Link} from 'react-router-dom'
 import './SideBar.scss'
 
-export default function SideBar({ collapse, toggle, setToggle}) {
+export default function SideBar() {
   return (
-    <ProSidebar
-      image={sideBg}
-      collapsed={collapse}
-      toggled={toggle}
-      breakPoint="md"
-      onToggle={setToggle}
-      className="sidebar"
-    >
+    <div className="sidebar">
+        <div className="path" >
+          <Link to="/">Main</Link>
+        </div>
+         <div className="path" >
+          <Link to="/about">About</Link>
+        </div>
+         <div className="path" >
+          <Link to="/projects">Projects</Link>
+        </div>
+         <div className="path" >
+          <Link to="/contact">Contact</Link>
+        </div>
 
-      <SidebarHeader className="sidebar-header">
-        <h4>Aucoeur Ngo</h4>
-      </SidebarHeader>
-      <SidebarContent>
-        <Menu>
-          <MenuItem>
-            <Link to="/">Main</Link>
-          </MenuItem>
-        </Menu>
-
-        <Menu>
-          <MenuItem>
-            <Link to="/about">About</Link>
-          </MenuItem>
-        </Menu>
-
-        <Menu>
-          <MenuItem>
-            <Link to="/projects">Projects</Link>
-          </MenuItem>
-        </Menu>
-        <Menu>
-          <MenuItem>
-            <Link to="/work">Work</Link>
-          </MenuItem>
-        </Menu>
-        <Menu>
-          <MenuItem>
-            <Link to="/contact">Contact</Link>
-          </MenuItem>
-        </Menu>
-      </SidebarContent>
-      <SidebarFooter className="sidebar-footer">
-        © 2021 Aucoeur Ngo
-      </SidebarFooter>
-    </ProSidebar>
-
+    </div>
   )
 }

@@ -6,15 +6,17 @@
   --accent-bright: rgb(255, 69, 0);
   --accent-complement: rgb(8, 30, 103);
   --transparent: rgba(0,0,0,0);
-  --cucumber-water: linear-gradient(90deg, rgba(227, 255, 231, 0.1) 0%, rgba(217, 231, 255, 0.2) 100%);
+  --cucumber-water: linear-gradient(90deg, rgba(53, 61, 54, 0.2) 0%, rgba(52, 69, 94, 0.2) 100%);
   --linear-gradient:
       linear-gradient(127deg, rgba(57, 104, 175, 0.3), rgba(0,255,0,0) 70.71%),
       linear-gradient(45deg, rgba(247, 76, 232, 0.3), rgba(255, 0, 0, 0) 70.71%),
       linear-gradient(210deg, rgba(0, 255, 200, 0.3), rgba(0,0,255,0) 70.71%);
 
-  --bg-dark: url('./layered-waves-haikei.svg');
-  --bg-light: url('./layered-waves-haikei-blue-red.svg');
-
+  /* --bg-dark: url('./layered-waves-haikei.svg');
+  --bg-light: url('./layered-waves-haikei-blue-red.svg'); */
+  --bg-dark: url('./eggen.png');
+  --bg-light: url('./eggen.png');
+  --sidebar-bg: url('./side-bg-smoke.png');
 
   font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
 
@@ -54,8 +56,10 @@ h3 {
   --theme-same: var(--light);
   --theme-diff: var(--dark);
   --theme-mid: var(--semidark);
-  background: var(--bg-light);
-  background-size: cover;
+  background: repeat var(--bg-light);
+  /* background-size: cover; */
+  background-size: 100px auto;
+
 }
 
 .dark {
@@ -65,6 +69,9 @@ h3 {
   --theme-same: var(--dark);
   --theme-diff: var(--light);
   --theme-mid: var(--semidark);
-  background: var(--bg-dark);
-  background-size: cover;
+  background-image:
+    var(--cucumber-water)
+    var(--bg-dark);
+  background-repeat: repeat;
+  background-size: 200px auto;
 }

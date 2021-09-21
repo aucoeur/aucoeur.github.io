@@ -27,20 +27,14 @@ function App() {
     <div className={`App ${theme ? 'dark': 'light'} ${toggle ? 'toggled' : ''}`}>
 
       <button className='toggle-theme' onClick={() => setTheme(!theme)}>Toggle Theme</button>
-      <Main />
-{/*
-      <SideBar
-        theme={theme}
-        toggle={toggle}
-        collapse={collapse}/>
-
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/work" component={Work} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch> */}
+      <SideBar />
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/work" component={Work} />
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
     </div>
   );
 }
