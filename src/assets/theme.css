@@ -1,16 +1,18 @@
 :root {
   --theme-button-text: rgb(255, 255, 255);
-  --light:  rgb(219, 215, 212);
+  --light: rgb(219, 215, 212);
   --semidark: rgb(80, 80, 80);
   --dark: rgb(36, 36, 36);
   --accent-bright: rgb(255, 69, 0);
+  --accent-bright-subtle: rgb(225, 62, 5);
   --accent-complement: rgb(8, 30, 103);
-  --transparent: rgba(0,0,0,0);
+  --accent-complement-subtle: rgb(1, 1, 90);
+  --transparent: rgba(0, 0, 0, 0);
   --cucumber-water: linear-gradient(90deg, rgba(53, 61, 54, 0.2) 0%, rgba(52, 69, 94, 0.2) 100%);
   --linear-gradient:
-      linear-gradient(127deg, rgba(57, 104, 175, 0.3), rgba(0,255,0,0) 70.71%),
-      linear-gradient(45deg, rgba(247, 76, 232, 0.3), rgba(255, 0, 0, 0) 70.71%),
-      linear-gradient(210deg, rgba(0, 255, 200, 0.3), rgba(0,0,255,0) 70.71%);
+    linear-gradient(127deg, rgba(57, 104, 175, 0.3), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(45deg, rgba(247, 76, 232, 0.3), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(210deg, rgba(0, 255, 200, 0.3), rgba(0, 0, 255, 0) 70.71%);
 
   --bg-dark: url('./layered-waves-haikei.svg');
   --bg-light: url('./layered-waves-haikei-blue-red.svg');
@@ -23,11 +25,13 @@
   -moz-osx-font-smoothing: grayscale;
 
 }
+
 #root {
   height: 100%;
 }
 
-*, body {
+*,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -52,9 +56,11 @@ h3 {
   --theme-page-background: var(--light);
   --theme-page-text: var(--light);
   --theme-button-color: var(--accent-complement);
+  --theme-hover-color: var(--accent-complement-subtle);
   --theme-same: var(--light);
   --theme-diff: var(--dark);
   --theme-mid: var(--semidark);
+
   /* background: repeat var(--bg-light); */
   /* background-size: 100px auto; */
   background-image: var(--bg-light);
@@ -66,6 +72,7 @@ h3 {
   --theme-page-background: var(--dark);
   --theme-page-text: var(--light);
   --theme-button-color: var(--accent-bright);
+  --theme-hover-color: var(--accent-bright-subtle);
   --theme-same: var(--dark);
   --theme-diff: var(--light);
   --theme-mid: var(--semidark);

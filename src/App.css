@@ -17,7 +17,7 @@
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 2em  20em 2em;
+  padding: 2em 2em 20em 2em;
   margin: 2em;
   background: var(--cucumber-water);
   color: var(--theme-button-text);
@@ -40,7 +40,7 @@
 }
 
 .toggle-theme:hover {
-  filter: brightness(150%);
+  background-color: var(--theme-hover-color);
 }
 
 .toggle-theme :focus {
@@ -56,16 +56,14 @@
   }
 
   h3 {
-    font-size: calc(1em + 1vw)!important;
+    font-size: calc(1em + 1vw) !important;
     font-family: 'Proxima Nova';
   }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600 and up) */
-@media only screen and (min-width: 600px) {
-
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {
