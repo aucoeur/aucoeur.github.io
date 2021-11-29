@@ -19,7 +19,6 @@ a work in progress :)
 
 ## Built With
 - ReactJS
-- React Pro Sidebar - [azouaoui-med/react-pro-sidebar](https://github.com/azouaoui-med/react-pro-sidebar)
 - gh-pages
 
 ## Resources

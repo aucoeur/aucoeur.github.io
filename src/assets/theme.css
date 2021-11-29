@@ -7,17 +7,21 @@
   --accent-bright-subtle: rgb(225, 62, 5);
   --accent-complement: rgb(8, 30, 103);
   --accent-complement-subtle: rgb(1, 1, 90);
+  --accent-bright-complement: rgb(0, 187, 255);
   --transparent: rgba(0, 0, 0, 0);
+
   --cucumber-water: linear-gradient(90deg, rgba(53, 61, 54, 0.2) 0%, rgba(52, 69, 94, 0.2) 100%);
+
   --linear-gradient:
-    linear-gradient(127deg, rgba(57, 104, 175, 0.3), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(45deg, rgba(247, 76, 232, 0.3), rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(210deg, rgba(0, 255, 200, 0.3), rgba(0, 0, 255, 0) 70.71%);
+    linear-gradient(127deg, rgba(57, 104, 175, 0.2), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(45deg, rgba(247, 76, 232, 0.1), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(210deg, rgba(0, 255, 200, 0.2), rgba(0, 0, 255, 0) 70.71%);
+
+  --darken-overlay: linear-gradient(to top right, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 0%);
+  --lighten-overlay: linear-gradient(to top right, rgba(179, 179, 179, 0.1) 0%, rgba(119, 119, 119, 0.2) 100%);
 
   --bg-dark: url('./layered-waves-haikei.svg');
   --bg-light: url('./layered-waves-haikei-blue-red.svg');
-
-  /* --sidebar-bg: url('./side-bg-smoke.png'); */
 
   font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
 
@@ -44,7 +48,7 @@ body {
 
 h1 {
   font-size: 5vh;
-  font-family: 'Proxima Nova Semibold', 'Trebuchet MS', Helvetica, sans-serif;
+  font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
 }
 
 h3 {
@@ -60,6 +64,8 @@ h3 {
   --theme-same: var(--light);
   --theme-diff: var(--dark);
   --theme-mid: var(--semidark);
+  --theme-link-color: var(--accent-bright-complement);
+  --overlay-filter: var(--lighten-overlay);
 
   /* background: repeat var(--bg-light); */
   /* background-size: 100px auto; */
@@ -76,6 +82,8 @@ h3 {
   --theme-same: var(--dark);
   --theme-diff: var(--light);
   --theme-mid: var(--semidark);
+  --theme-link-color: var(--accent-bright);
+  --overlay-filter: var(--darken-overlay);
   /* background-image:
     var(--cucumber-water)
     var(--bg-dark);
@@ -83,4 +91,14 @@ h3 {
   background-size: 200px auto; */
   background-image: var(--bg-dark);
   background-size: cover;
+}
+
+a,
+a:visited {
+  color: var(--theme-link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  filter: hue-rotate(180deg);
 }
