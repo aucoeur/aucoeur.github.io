@@ -1,30 +1,44 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-*/brainstorm.xd
-src/assets/pdf_icon_mini.svg
-src/assets/pdf_icon.svg
-
-.vscode
-
-# dependencies
-/node_modules
+# Dependencies
+node_modules/
 /.pnp
 .pnp.js
 
-# testing
+# Testing
 /coverage
 
-# production
+# Production
+/dist
 /build
 
-# misc
+# Misc
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-src/assets/egg.png
-src/assets/eggen.png
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
