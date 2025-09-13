@@ -16,7 +16,7 @@ export default function Main() {
 
       <div className="badges">
         <div className="row one">
-          <a href={process.env.PUBLIC_URL + 'AucoeurNgo-Resume.pdf'}>
+          <a href="/AucoeurNgo-Resume.pdf">
             <img src={`https://img.shields.io/badge/pdf-view_my_resume-darkblue?style=for-the-badge&labelColor=010160&logo=${pdf_icon}`} alt="pdf badge text" />
           </a>
         </div>
