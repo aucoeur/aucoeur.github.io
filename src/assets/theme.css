@@ -20,8 +20,8 @@
   --darken-overlay: linear-gradient(to top right, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 0%);
   --lighten-overlay: linear-gradient(to top right, rgba(179, 179, 179, 0.1) 0%, rgba(119, 119, 119, 0.2) 100%);
 
-  --bg-dark: url('./layered-waves-haikei.svg');
-  --bg-light: url('./layered-waves-haikei-blue-red.svg');
+  --bg-dark: url('./bg-paper-waves.png');
+  --bg-light: url('./bg-paper-waves-light.png');
 
   font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
 
