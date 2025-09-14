@@ -1,31 +1,40 @@
-import React, { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Main from './components/Main/Main'
-import Tools from './components/Tools/Tools'
+import Main from "./components/Main/Main";
+import Tools from "./components/Tools/Tools";
+import SunIcon from "./components/Icons/SunIcon";
+import MoonIcon from "./components/Icons/MoonIcon";
 
-import './App.css'
+import "./App.css";
 
 // Check if OS darkmode set using css media query
 const prefersDark = () => {
-  const dark = window.matchMedia('(prefers-color-scheme: dark)')
-  return dark.matches
-}
+  const dark = window.matchMedia("(prefers-color-scheme: dark)");
+  return dark.matches;
+};
 
 function App() {
   // Set initial state to OS preference
-  const [theme, setTheme] = useState(prefersDark)
-  const [toggle, setToggle] = useState(false)
+  const [theme, setTheme] = useState(prefersDark);
+  const [toggle, setToggle] = useState(false);
 
   return (
-    <div className={`App ${theme ? 'dark' : 'light'} ${toggle ? 'toggled' : ''}`}>
-      <button className='toggle-theme' onClick={() => setTheme(!theme)}>Toggle Theme</button>
+    <div
+      className={`App ${theme ? "dark" : "light"} ${toggle ? "toggled" : ""}`}
+    >
+      <div className="theme-container">
+
+      <button className="toggle-theme" onClick={() => setTheme(!theme)}>
+        {theme ? <SunIcon /> : <MoonIcon />}
+      </button>
+      </div>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/tools" element={<Tools />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

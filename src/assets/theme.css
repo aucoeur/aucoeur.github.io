@@ -67,8 +67,6 @@ h3 {
   --theme-link-color: var(--accent-bright-complement);
   --overlay-filter: var(--lighten-overlay);
 
-  /* background: repeat var(--bg-light); */
-  /* background-size: 100px auto; */
   background-image: var(--bg-light);
   background-size: cover;
 
@@ -84,11 +82,7 @@ h3 {
   --theme-mid: var(--semidark);
   --theme-link-color: var(--accent-bright);
   --overlay-filter: var(--darken-overlay);
-  /* background-image:
-    var(--cucumber-water)
-    var(--bg-dark);
-  background-repeat: repeat;
-  background-size: 200px auto; */
+
   background-image: var(--bg-dark);
   background-size: cover;
 }

@@ -32,28 +32,36 @@
   color: var(--theme-button-text);
 }
 
-.toggle-theme {
-  position: absolute;
-  top: 0;
-  right: 0;
+.theme-container {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+}
 
-  padding: 0.75em;
-  margin: 1.5em;
-  border-radius: .5rem;
-  text-align: center;
-  background-color: var(--theme-button-color);
-  color: var(--theme-button-text);
-  font-size: .75em;
-  border: 0 solid transparent;
+.toggle-theme {
+  margin: 1.5rem;
   z-index: 1000;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .toggle-theme:hover {
-  background-color: var(--theme-hover-color);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.toggle-theme :focus {
-  outline: none;
+.toggle-theme svg {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -67,6 +75,16 @@
   h3 {
     font-size: calc(1em + 1vw) !important;
     font-family: 'Proxima Nova';
+  }
+
+  .toggle-theme {
+    margin: 1rem;
+    padding: 0.4rem;
+  }
+
+  .toggle-theme svg {
+    width: 20px;
+    height: 20px;
   }
 
 }
