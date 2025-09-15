@@ -19,11 +19,14 @@
   align-self: stretch;
   justify-self: flex-start;
   justify-content: center;
-  padding: 2em 2em 20em 2em;
-  margin: 2em;
+  padding: 2em;
+  margin: 1em;
   background: var(--linear-gradient),
     var(--overlay-filter);
   background-blend-mode: darken;
+  box-sizing: border-box;
+  max-height: calc(100vh - 2em);
+  overflow: hidden;
 }
 
 
@@ -36,7 +39,11 @@
   display: flex;
   width: 100vw;
   justify-content: flex-end;
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
 }
 
 .toggle-theme {
@@ -52,6 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto;
 }
 
 .toggle-theme:hover {
@@ -68,19 +76,33 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .App {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 1em;
+    margin: 0.5em;
+    max-height: calc(100vh - 1em);
+    max-width: calc(100vw - 1em);
+  }
 
   h1 {
-    font-size: calc(2em + 2vw) !important;
+    font-size: calc(1.5em + 1.5vw) !important;
     font-family: 'Manrope', 'Open Sans', sans-serif;
+    margin: 0.5em 0;
   }
 
   h3 {
-    font-size: calc(1em + 1vw) !important;
+    font-size: calc(0.9em + 0.8vw) !important;
     font-family: 'Manrope', 'Open Sans', sans-serif;
+    margin: 0.3em 0;
   }
 
   .toggle-theme {
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 0.4rem;
   }
 
@@ -88,7 +110,6 @@
     width: 20px;
     height: 20px;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600 and up) */

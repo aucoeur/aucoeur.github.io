@@ -13,8 +13,15 @@ export default function Main() {
   return (
     <div className="main">
       <div className="header">
-        <h1>Hi, hello, I'm Aucoeur (okkurr!)</h1>
+        <h1>
+          <span>Hi, hello,</span>
+          <br />
+          <span>I'm Aucoeur (okkurr!)</span>
+        </h1>
         <h3>Software Engineer. Perpetual Tinkerer :]</h3>
+      </div>
+
+      <div className="icon-section">
         <ThreeDPrinterIcon />
       </div>
 
