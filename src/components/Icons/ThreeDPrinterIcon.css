@@ -178,7 +178,7 @@
   transform: translate(7.5px, 45px);
 }
 
-path {
+.threedpsvg path {
   stroke-dasharray: 634.277;
   /* stroke-dashoffset: 634.277; */
   -webkit-animation: draw linear 8000ms forwards;

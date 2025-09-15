@@ -36,10 +36,12 @@
   display: flex;
   width: 100vw;
   justify-content: flex-end;
+
 }
 
 .toggle-theme {
-  margin: 1.5rem;
+  margin-top: 0.75em;
+  margin-right: 0.75em;
   z-index: 1000;
   background: transparent;
   border: none;
@@ -69,12 +71,12 @@
 
   h1 {
     font-size: calc(2em + 2vw) !important;
-    font-family: 'Proxima Nova';
+    font-family: 'Manrope', 'Open Sans', sans-serif;
   }
 
   h3 {
     font-size: calc(1em + 1vw) !important;
-    font-family: 'Proxima Nova';
+    font-family: 'Manrope', 'Open Sans', sans-serif;
   }
 
   .toggle-theme {

@@ -1,8 +1,13 @@
 import "./Main.css";
 
-import ThreeDPrinterIcon from "../Icons/ThreeDPrinterIcon";
-
-const pdf_icon = `data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiDQoJeT0iMHB4IiB3aWR0aD0iMzYuMzc1cHgiIGhlaWdodD0iMzYuMzc2cHgiIHZpZXdCb3g9IjAgMCAzNi4zNzUgMzYuMzc2Ig0KCXN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM2LjM3NSAzNi4zNzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCgk8Zz4NCgkJPHBhdGggc3R5bGU9ImZpbGw6I0UyRTVFNyIgZD0iTTMzLjkzOCwyNS42MjZ2OC4yNWMwLDEuMzgzLTEuMTE5LDIuNS0yLjUsMi41aC0yNi41Yy0xLjM4MSwwLTIuNS0xLjExNy0yLjUtMi41di04LjI1YzAtMS4zODEsMS4xMTktMi41LDIuNS0yLjUNCgkJczIuNSwxLjExOSwyLjUsMi41djUuNzVoMjEuNXYtNS43NWMwLTEuMzgxLDEuMTE5LTIuNSwyLjUtMi41UzMzLjkzOCwyNC4yNDUsMzMuOTM4LDI1LjYyNnogTTE2LjQyLDI3Ljc2OA0KCQljMC40ODgsMC40ODgsMS4xMjksMC43MzIsMS43NjgsMC43MzJjMC42NDMsMCwxLjI3OS0wLjI0NCwxLjc3LTAuNzMybDcuNS03LjQ5OGMwLjk3OC0wLjk3NSwwLjk3OC0yLjU1OCwwLTMuNTM1DQoJCWMtMC45NzctMC45NzctMi41NjEtMC45NzctMy41MzUsMGwtMy4yMzEsMy4yMzJWMi41YzAtMS4zODEtMS4xMTktMi41LTIuNS0yLjVzLTIuNSwxLjExOS0yLjUsMi41djE3LjQ2N2wtMy4yMzItMy4yMzINCgkJYy0wLjk3Ny0wLjk3Ny0yLjU2MS0wLjk3Ny0zLjUzNSwwYy0wLjk3NywwLjk3OC0wLjk3NywyLjU2LDAsMy41MzVMMTYuNDIsMjcuNzY4eiIgLz4NCgk8L2c+DQo8L3N2Zz4NCg==`;
+import {
+  PDFIcon,
+  GithubIcon,
+  LinkedInIcon,
+  MediumIcon,
+  MailIcon,
+  ThreeDPrinterIcon,
+} from "../Icons";
 
 export default function Main() {
   return (
@@ -16,27 +21,37 @@ export default function Main() {
       <div className="social-links">
         <div className="link-row">
           <a href="/AucoeurNgo-Resume.pdf" className="button">
-            View Resume
+            <div className="row">
+              View Resume <PDFIcon />
+            </div>
           </a>
         </div>
 
         <div className="link-row">
           <a href="https://github.com/aucoeur" className="button">
-            GitHub
+            <div className="row">
+              GitHub <GithubIcon />
+            </div>
           </a>
 
           <a href="https://www.linkedin.com/in/aucoeurngo/" className="button">
-            LinkedIn
+            <div className="row">
+              LinkedIn <LinkedInIcon />
+            </div>
           </a>
         </div>
 
         <div className="link-row">
           <a href="https://medium.com/@aucoeurngo" className="button">
-            Medium
+            <div className="row">
+              Medium <MediumIcon />
+            </div>
           </a>
 
-          <a href="mailto:aucoeurngo@gmail.com" className="button">
-            Contact Me
+          <a href="mailto:hire@aucoeur.dev" className="button">
+            <div className="row">
+              Contact Me <MailIcon />
+            </div>
           </a>
         </div>
       </div>

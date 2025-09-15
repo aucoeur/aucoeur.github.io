@@ -23,7 +23,7 @@
   --bg-dark: url('./bg-paper-waves.png');
   --bg-light: url('./bg-paper-waves-light.png');
 
-  font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
+  font-family: 'Manrope', 'Open Sans', sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,19 +48,19 @@ body {
 
 h1 {
   font-size: 5vh;
-  font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
+  font-family: 'Manrope', 'Open Sans', sans-serif;
 }
 
 h3 {
   font-size: 3vh;
-  font-family: 'Proxima Nova', 'Trebuchet MS', Helvetica, sans-serif;
+  font-family: 'Manrope', 'Open Sans', sans-serif;
 }
 
 .light {
   --theme-page-background: var(--light);
   --theme-page-text: var(--light);
-  --theme-button-color: var(--accent-complement);
-  --theme-hover-color: var(--accent-complement-subtle);
+  --theme-button-color: var(--accent-bright);
+  --theme-hover-color: var(--accent-bright-subtle);
   --theme-same: var(--light);
   --theme-diff: var(--dark);
   --theme-mid: var(--semidark);
@@ -75,8 +75,9 @@ h3 {
 .dark {
   --theme-page-background: var(--dark);
   --theme-page-text: var(--light);
-  --theme-button-color: var(--accent-bright);
-  --theme-hover-color: var(--accent-bright-subtle);
+  --theme-button-color: var(--accent-complement);
+  --theme-hover-color: var(--accent-complement-subtle);
+
   --theme-same: var(--dark);
   --theme-diff: var(--light);
   --theme-mid: var(--semidark);
@@ -89,10 +90,10 @@ h3 {
 
 a,
 a:visited {
-  color: var(--theme-link-color);
+  color: var(--theme-page-text);
   text-decoration: none;
 }
 
 a:hover {
-  filter: hue-rotate(180deg);
+  filter: brightness(1.2);
 }

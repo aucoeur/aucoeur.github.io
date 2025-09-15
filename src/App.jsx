@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Main from "./components/Main/Main";
-import Tools from "./components/Tools/Tools";
+
 import SunIcon from "./components/Icons/SunIcon";
 import MoonIcon from "./components/Icons/MoonIcon";
 
@@ -24,14 +24,12 @@ function App() {
       className={`App ${theme ? "dark" : "light"} ${toggle ? "toggled" : ""}`}
     >
       <div className="theme-container">
-
-      <button className="toggle-theme" onClick={() => setTheme(!theme)}>
-        {theme ? <SunIcon /> : <MoonIcon />}
-      </button>
+        <button className="toggle-theme" onClick={() => setTheme(!theme)}>
+          {theme ? <SunIcon /> : <MoonIcon />}
+        </button>
       </div>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/tools" element={<Tools />} />
       </Routes>
     </div>
   );
