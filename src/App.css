@@ -7,10 +7,35 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  position: relative;
 
   background-color: var(--theme-page-background);
   color: var(--theme-page-text);
 
+}
+
+/* Background layers for light mode */
+.App.light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--bg-texture);
+  background-repeat: repeat;
+  background-size: auto;
+  mix-blend-mode: overlay;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Fallback for browsers that don't support mix-blend-mode */
+@supports not (mix-blend-mode: overlay) {
+  .App.light::before {
+    mix-blend-mode: multiply;
+  }
 }
 
 .container {
@@ -27,6 +52,8 @@
   box-sizing: border-box;
   max-height: calc(100vh - 2em);
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 

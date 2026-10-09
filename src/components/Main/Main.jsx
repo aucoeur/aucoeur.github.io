@@ -27,7 +27,7 @@ export default function Main() {
 
       <div className="social-links">
         <div className="link-row">
-          <a href="/AucoeurNgo-Resume.pdf" className="button">
+          <a href="/AucoeurNgo-Resume-SystemsAnalyst.pdf" className="button">
             <div className="row">
               View Resume <PDFIcon />
             </div>
